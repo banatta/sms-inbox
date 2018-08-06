@@ -6,16 +6,20 @@ class Message extends React.Component {
 
     this.state = props.item;
 
+    //Here is where we would change the state of the Message  
     this.toggleRead = data => {
-      //Here is where we would change the state of the Message
       console.log("message %s read toggled", this.state.id);
     };
   };
 
   render() {
+    const sentFrom = this.state.from;
+    const sentTo = this.state.to.map(to => to.number).join(", ");
+    const readStatus = (this.state.is_new ? "unread" : "read");
+
     return (
-      <div className={"message " + (this.state.is_new ? "unread" : "read")} onClick={this.toggleRead}>
-        <p> {this.state.text} </p> 
+      <div className={"message " + readStatus} onClick={this.toggleRead}>
+        <p>{sentFrom} to {sentTo}: {this.state.text} </p> 
       </div>
     )
   }

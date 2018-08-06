@@ -25,14 +25,19 @@ class Inbox extends React.Component {
 
   render() {
     const {items} = this.state;
+    const unreadCount = items.filter((item, i) => {return item.is_new;}).length;
+    
     return (
-      <div className="inbox" ref="items">
-        {
-          //Todo: Order Chronologically
-          items.map((item, i) => 
-            <Message key={i} item={item}/>
-          )
-        }
+      <div>
+        <h2>Unread: {unreadCount}</h2>
+        <div className="inbox" ref="items">
+          {
+            //Todo: Order Chronologically
+            items.map((item, i) => 
+              <Message key={i} item={item}/>
+            )
+          }
+        </div>
       </div>
     );
   };

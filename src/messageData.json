@@ -25,6 +25,10 @@
               {
                   "number": "+17326838492",
                   "status": "sent"
+              },
+              {
+                  "number": "+17326839007",
+                  "status": "sent"
               }
           ],
           "direction": "out",
