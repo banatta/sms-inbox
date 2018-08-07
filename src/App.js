@@ -13,7 +13,7 @@ class App extends Component {
         <Inbox />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;

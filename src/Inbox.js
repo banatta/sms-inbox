@@ -13,15 +13,15 @@ class Inbox extends React.Component {
 
   componentDidMount() {
       this.scrollToBot();
-  }
+  };
 
   componentDidUpdate() {
       this.scrollToBot();
-  }
+  };
 
   scrollToBot() {
       ReactDOM.findDOMNode(this.refs.items).scrollTop = ReactDOM.findDOMNode(this.refs.items).scrollHeight;
-  }
+  };
 
   render() {
     const {items} = this.state;
@@ -42,9 +42,6 @@ class Inbox extends React.Component {
       </div>
     );
   };
-
-
-
 };
 
 export default Inbox;

@@ -6,9 +6,9 @@ class Message extends React.Component {
 
     this.state = props.item;
 
-    //Here is where we would change the state of the Message  
+    //Here is where we would change the is_new property in the state of the Message  
     this.toggleRead = data => {
-      console.log("message %s read toggled", this.state.id);
+      console.log("message %s is_new toggled", this.state.id);
     };
   };
 
@@ -21,10 +21,11 @@ class Message extends React.Component {
     return (
       <div className="message" onClick={this.toggleRead}>
         <p>{sentFrom} to {sentTo}</p>
-        <p className={readStatus}> {this.state.text} </p>
+        <p className={readStatus}>{this.state.text}</p>
         <p className="timestamp">{timestamp}</p>
       </div>
-    )
-  }
-}
+    );
+  };
+};
+
 export default Message;
