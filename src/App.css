@@ -2,27 +2,45 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
+  background-color: #42f4c8;
   height: 150px;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
+  color: #3d3d3d;
+  float: left;
+  margin-left: 40px;
 }
 
 .App-intro {
   font-size: large;
 }
 
-.message.unread {
+.inbox {
+  text-align: left;
+}
+
+.unreadCount {
+  text-align: center;
+  border-bottom: solid 1px #bbb;
+  padding-bottom: 5px;
+}
+
+.message{
+  border-bottom: solid 1px #bbb;
+  padding-left: 5%;
+}
+
+.timestamp{
+  text-align: right;
+  padding-right: 5%;
+}
+
+.unread {
   font-weight: bold;
 }
 

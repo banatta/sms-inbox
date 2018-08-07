@@ -16,10 +16,13 @@ class Message extends React.Component {
     const sentFrom = this.state.from;
     const sentTo = this.state.to.map(to => to.number).join(", ");
     const readStatus = (this.state.is_new ? "unread" : "read");
+    const timestamp = new Date(this.state.created_at).toLocaleString();
 
     return (
-      <div className={"message " + readStatus} onClick={this.toggleRead}>
-        <p>{sentFrom} to {sentTo}: {this.state.text} </p> 
+      <div className="message" onClick={this.toggleRead}>
+        <p>{sentFrom} to {sentTo}</p>
+        <p className={readStatus}> {this.state.text} </p>
+        <p className="timestamp">{timestamp}</p>
       </div>
     )
   }

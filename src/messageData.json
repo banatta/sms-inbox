@@ -1,5 +1,5 @@
 {
-  "total": 2,
+  "total": 5,
   "offset": 0,
   "limit": 25,
   "items": [
@@ -14,9 +14,9 @@
           ],
           "direction": "in",
           "created_epoch": 1476659032,
-          "created_at": "2016-10-16T23:03:52+00:00",
+          "created_at": "2016-10-18T01:03:52+00:00",
           "is_new": false,
-          "text": "We received this message"
+          "text": "So how about lunch tomorrow?"
       },
       {
           "id": "8f7a99b533655f9482bcfe25bb845a86d6c28344",
@@ -25,17 +25,66 @@
               {
                   "number": "+17326838492",
                   "status": "sent"
-              },
-              {
-                  "number": "+17326839007",
-                  "status": "sent"
               }
           ],
           "direction": "out",
           "created_epoch": 1476659133,
+          "created_at": "2016-10-18T23:05:12+00:00",
+          "is_new": true,
+          "text": "Why are you ignoring my texts?"
+      },
+      {
+          "id": "8f7a99b533655f9482ade56adc62dce86c28388",
+          "from": "+17329821139",
+          "to": [
+              {
+                  "number": "+17326843552",
+                  "status": "sent"
+              }
+          ],
+          "direction": "in",
+          "created_epoch": 1476647112,
           "created_at": "2016-10-16T23:05:33+00:00",
           "is_new": true,
-          "text": "We send this message"
+          "text": "What's the name of that bar again?"
+      },
+      {
+          "id": "8f7a99b5336d-f9482bcfe25e-845a86d6c2ae4c",
+          "from": "+17329957693",
+          "to": [
+              {
+                  "number": "+17326878439",
+                  "status": "sent"
+              },
+              {
+                  "number": "+17326837891",
+                  "status": "sent"
+              }
+          ],
+          "direction": "out",
+          "created_epoch": 1476660121,
+          "created_at": "2016-10-18T23:05:33+00:00",
+          "is_new": true,
+          "text": "See you guys soon!"
+      },
+      {
+          "id": "98fea3365db-9482bcfe250-b845a86d6c21110",
+          "from": "+17329910000",
+          "to": [
+              {
+                  "number": "+17326831111",
+                  "status": "sent"
+              },
+              {
+                  "number": "+17326884932",
+                  "status": "sent"
+              }
+          ],
+          "direction": "in",
+          "created_epoch": 1474918721,
+          "created_at": "2016-10-15T20:12:56+00:00",
+          "is_new": false,
+          "text": "hahaha yeah"
       }
   ]
 }

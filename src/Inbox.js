@@ -25,14 +25,15 @@ class Inbox extends React.Component {
 
   render() {
     const {items} = this.state;
+    //Order Chronologically by created_epoch
+    items.sort((a,b) => a.created_epoch < b.created_epoch);
     const unreadCount = items.filter((item, i) => {return item.is_new;}).length;
-    
+
     return (
-      <div>
-        <h2>Unread: {unreadCount}</h2>
-        <div className="inbox" ref="items">
+      <div className="inbox">
+        <h2 className="unreadCount">{unreadCount} new!</h2>
+        <div className="messageContainer" ref="items">
           {
-            //Todo: Order Chronologically
             items.map((item, i) => 
               <Message key={i} item={item}/>
             )
